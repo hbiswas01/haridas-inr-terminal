@@ -18,8 +18,21 @@ st.markdown("""
             background-color: #ffffff !important;
             border-right: 1px solid #e0e0e0;
         }
-        /* টপ হেডার হাইড করা */
-        header {visibility: hidden;}
+        
+        /* টপ মেনু (3 dots) হাইড করা কিন্তু সাইডবার বাটন অন রাখা */
+        #MainMenu {visibility: hidden;}
+        footer {visibility: hidden;}
+        header {background-color: transparent !important;}
+        
+        /* Sidebar Toggle Button (ভিজ্যুয়াল বাটন) ডিজাইন */
+        [data-testid="collapsedControl"] {
+            display: flex !important;
+            background-color: #ffffff;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+            margin: 10px;
+            color: #333333;
+        }
         
         /* কাস্টম ওয়াচলিস্ট আইটেম ডিজাইন */
         .watchlist-row {
@@ -36,7 +49,7 @@ st.markdown("""
         .percent-up { color: #4caf50; font-size: 12px; font-weight: bold;} 
         .percent-down { color: #e53935; font-size: 12px; font-weight: bold;} 
         
-        /* SMC অ্যালার্ট বক্স ডিজাইন (Light Theme) */
+        /* SMC অ্যালার্ট বক্স ডিজাইন */
         .smc-box {
             background-color: #ffffff;
             padding: 20px;
